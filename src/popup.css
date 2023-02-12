@@ -1,0 +1,53 @@
+:root {
+  --spacing: 0.5em;
+  --primary-color: rgb(46, 118, 255);
+  --dark-color: rgb(32, 82, 178);
+  --secondary-color: rgb(32, 82, 178);
+  --light-color: white;
+  --success-color: #rgb(35, 78, 82);
+  --error-color: rgb(197, 48, 48);
+}
+
+body {
+  height: auto;
+  width: 20rem;
+  padding: var(--spacing);
+  font: 0.8rem 'Fira Sans', sans-serif;
+}
+
+textarea {
+  box-sizing: border-box;
+  height: 25rem;
+  width: 100%;
+}
+
+h1 {
+  all: unset;
+  font-size: 1.4rem;
+}
+
+.container {
+  display: grid;
+  gap: var(--spacing);
+}
+
+#success-msg {
+  border-color: rgb(56, 178, 172);
+  background-color: rgb(230, 255, 250);
+  color: var(--success-color);
+}
+
+#error-msg {
+  border-color: rgb(245, 101, 101);
+  background-color: rgb(255, 245, 245);
+  color: var(--success-color);
+  color: var(--error-color);
+}
+
+.alert {
+  font-weight: 700;
+  border-top: 4px solid;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
